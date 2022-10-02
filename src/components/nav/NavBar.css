@@ -1,0 +1,10 @@
+.navbar__main {
+    background: #533b4d;
+     
+}
+
+.navbar__logo { 
+border-radius: 3px;
+margin-right: 1.25rem;
+margin-left: -1rem;
+}

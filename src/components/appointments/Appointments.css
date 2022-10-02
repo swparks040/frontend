@@ -1,0 +1,65 @@
+.appointmentList {
+    display: block;
+    text-align:center;
+}
+
+.appointment__details {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.appointment__text {
+    margin: 1rem;
+    padding: 1rem; 
+}
+
+.appointment__header {
+    display: block;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #222529;
+}
+
+.carousel-caption {
+    
+}
+
+h3.carousel__text {
+    color: black;
+    font-style: italic;
+}
+p.carousel__text {
+    margin-top: 0px;
+    color: #222529;
+}
+
+.d-block {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-bottom: 135px;
+    border-radius: 10px;
+}
+
+
+
+.makeAppointment__button.btn.btn-dark,
+.back__button.btn.btn-dark {
+    display: block;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    margin-top: 2.5rem
+}
+
+.appointmentDelete__button.btn.btn-dark,
+.appointmentEdit__button.btn.btn-dark {
+    display: flex;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}

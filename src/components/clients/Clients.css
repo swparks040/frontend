@@ -1,0 +1,7 @@
+.client {
+    justify-content: center;
+    max-width: 50%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: white;
+    border-radius: 10px;
+}
