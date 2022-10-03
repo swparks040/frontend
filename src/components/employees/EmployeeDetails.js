@@ -23,10 +23,10 @@ export const EmployeeDetails = () => {
     return <>
     <section className="employee">
         <header className="employee__header">{employee?.user?.fullName}</header> 
-            <p>Email: {employee?.user?.email}</p>
-            <p>Role: {employee.role}</p>
-            <p>Pay: {employee.payRate}</p>
-            <p>Start Date: {employee.startDate}</p>
+            <p className="employee__text">Email: {employee?.user?.email}</p>
+            <p className="employee__text">Role: {employee.role}</p>
+            <p className="employee__text">Pay: {employee.payRate}</p>
+            <p className="employee__text">Start Date: {employee.startDate}</p>
         <footer className="employee__footer">Has claimed {employee?.employeeAppointments?.length} appointments.</footer>
     </section>
         <Button variant="dark"className="employeeUpdate__button"onClick={() => navigate(`/profile/${employeeId}`)}>Update</Button>

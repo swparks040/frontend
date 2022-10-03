@@ -115,8 +115,6 @@ export const Appointment = ({appointmentObject, currentUser, employees, pullAppo
 
 
     const navigate = useNavigate();
-    
-  
         return <><section className="appointment" key={`appointment--${appointmentObject.id}`}>
         <header className="appointment__header">
             {
@@ -136,6 +134,9 @@ export const Appointment = ({appointmentObject, currentUser, employees, pullAppo
         <footer>
         </footer>
             {
+                canClaim() 
+            }
+            {
                 canEdit()
             }
             {
@@ -143,9 +144,6 @@ export const Appointment = ({appointmentObject, currentUser, employees, pullAppo
             }
             {
                 canDelete()
-            }
-            {
-                canClaim() 
             }
     </section>
     </>

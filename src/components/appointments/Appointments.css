@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
 .appointmentList {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
     display: block;
     text-align:center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 .appointment__details {
@@ -13,16 +20,49 @@
     border-radius: 10px;
 }
 .appointment__text {
-    margin: 1rem;
-    padding: 1rem; 
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0.4rem;
+    padding: 0.4rem; 
 }
 
 .appointment__header {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
     display: block;
     text-align:center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: #222529;
+}
+
+.appointmentClaim__tag {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #222529;
+}
+
+h2.appointmentForm__title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    display: block;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+h5.appointmentForm__title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    display: block;
+    text-align:center;
 }
 
 .carousel-caption {
@@ -31,9 +71,10 @@
 
 h3.carousel__text {
     color: black;
-    font-style: italic;
+    font-family: 'Nunito', sans-serif;
 }
 p.carousel__text {
+    font-family: 'Nunito', sans-serif;
     margin-top: 0px;
     color: #222529;
 }
@@ -47,9 +88,10 @@ p.carousel__text {
 
 
 .makeAppointment__button.btn.btn-dark,
+.bookAppointment__button.btn.btn-dark,
 .back__button.btn.btn-dark {
+    font-family: 'Nunito', sans-serif;
     display: block;
-    border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
@@ -57,7 +99,10 @@ p.carousel__text {
 }
 
 .appointmentDelete__button.btn.btn-dark,
-.appointmentEdit__button.btn.btn-dark {
+.appointmentEdit__button.btn.btn-dark,
+.appointmentComplete__button.btn.btn-dark,
+.appointmentClaim__button.btn.btn-dark {
+    font-family: 'Nunito', sans-serif;
     display: flex;
     margin: 5px;
     margin-left: auto;

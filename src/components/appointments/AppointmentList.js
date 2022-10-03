@@ -10,6 +10,11 @@ import { Button } from "react-bootstrap";
 import whitePinkNails from "../images/whitePinkNails.jpg";
 import easterEggs from "../images/easterEggs.jpg";
 import blueTopaz from "../images/blueTopaz.jpg";
+import everything from "../images/everything.jpg";
+import funtimes from "../images/funtimes.jpeg";
+import ivoryTower from "../images/ivoryTower.jpeg";
+import Roses from "../images/Roses.jpg";
+import weddingReady from "../images/weddingReady.jpg";
 import Carousel from "react-bootstrap/Carousel";
 
 export const AppointmentList = () => {
@@ -57,18 +62,16 @@ export const AppointmentList = () => {
   return (
     <>
     
-      <h2 className="appointmentList">My Appointments</h2>
+      
       {nailedItUserObject.staff ? (
-        <></>
+        <>
+        <h2 className="appointmentList">My Appointments</h2>
+        </>
       ) : (
         <>
-          <Button
-            variant="dark"
-            className="makeAppointment__button"
-            onClick={() => navigate("/appointment/create")}
-          >
-            Make New Appointment
-          </Button>
+        <h2 className="appointmentList">Our Custom Selection</h2>
+        
+          
         </>
       )}
       <Carousel>
@@ -101,14 +104,81 @@ export const AppointmentList = () => {
             className="d-block"
             style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
             src={blueTopaz}
-            alt="First slide"
+            alt="Blue Topaz"
           />
           <Carousel.Caption>
             <h3 className="carousel__text">Blue Topaz</h3>
             <p className="carousel__text">Oliani's selection for Back to School.</p>
           </Carousel.Caption>
         </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block"
+            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            src={everything}
+            alt="Everything"
+          />
+          <Carousel.Caption>
+            <h3 className="carousel__text">Everything</h3>
+            <p className="carousel__text">We can produce anything you can imagine.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block"
+            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            src={funtimes}
+            alt="Everything"
+          />
+          <Carousel.Caption>
+            <h3 className="carousel__text">Sweet Shop</h3>
+            <p className="carousel__text">Delicious and fun.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block"
+            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            src={ivoryTower}
+            alt="Ivory Tower"
+          />
+          <Carousel.Caption>
+            <h3 className="carousel__text">Ivory Tower</h3>
+            <p className="carousel__text">Serious Neverending Story Princess vibes...</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block"
+            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            src={Roses}
+            alt="Roses"
+          />
+          <Carousel.Caption>
+            <h3 className="carousel__text">Roses</h3>
+            <p className="carousel__text">Roses are in season and in full bloom.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block"
+            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            src={weddingReady}
+            alt="Roses"
+          />
+          <Carousel.Caption>
+            <h3 className="carousel__text">Wedding Ready</h3>
+            <p className="carousel__text">The perfect bride deserves the perfect nails.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
       </Carousel>
+      <Button
+            variant="dark"
+            className="makeAppointment__button"
+            onClick={() => navigate("/appointment/create")}
+          >
+            Make New Appointment
+          </Button>
       <article className="appointments">
         {filteredAppointments.map((appointment) => (
           <Appointment

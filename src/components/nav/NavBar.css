@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
+
 .navbar__main {
+    font-family: 'Nunito', sans-serif;
     background: #533b4d;
      
 }
 
 .navbar__logo { 
-border-radius: 3px;
-margin-right: 1.25rem;
-margin-left: -1rem;
+    border-radius: 3px;
+    margin-right: 1.25rem;
+    margin-left: -1rem;
+}
+
+.navbar__olivia {
+    font-family: 'Nunito', sans-serif;
 }

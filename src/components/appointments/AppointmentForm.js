@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap"
 
 
 
@@ -79,6 +80,7 @@ export const AppointmentForm = () => {
   return (
     <form className="appointmentForm">
       <h2 className="appointmentForm__title">New Appointment</h2>
+      <h5 className="appointmentForm__title">Select Custom for Color, Shape, and Effect for a Custom Design.  </h5>
       <fieldset className="form-group">
         <label htmlFor="nailColor">Nail Colors</label>
         {nailColors.map((nailColor) => {
@@ -150,7 +152,7 @@ export const AppointmentForm = () => {
             autoFocus
             type="text"
             className="form-control"
-            placeholder="Directions and notes for your nail technician..."
+            placeholder="Custom design title or directions and notes for your nail technician..."
             value={appointment.directions}
             onChange={(evt) => {
               const copy = { ...appointment };
@@ -179,12 +181,12 @@ export const AppointmentForm = () => {
           />
         </div>
       </fieldset>
-      <button
+      <Button
+      variant="dark"
         onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-        className="bookAppointment__button"
-      >
+        className="bookAppointment__button">
         Book Appointment
-      </button>
+      </Button>
     </form>
   );
 };

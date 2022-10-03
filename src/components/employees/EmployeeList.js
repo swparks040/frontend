@@ -19,8 +19,8 @@ export const EmployeeList = () => {
     )
 
     return <><article className="employees">
-        <h2>List of Employees</h2>
-        <span className="employeeList__details">Select hyperlink for details...</span>
+        <h2 className="employeeList__details">List of Employees</h2>
+        <h5 className="employeeList__details">Select hyperlink for details...</h5>
         {
             users.map(user => <Employee key={`employee--${user.id}`}
             id={user.id} 

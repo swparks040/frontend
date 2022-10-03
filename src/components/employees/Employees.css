@@ -1,7 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
 .employee {
-    justify-content: center;
-    max-width: 50%;
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     background-color: white;
     border-radius: 10px;
 }
+
+.employee__header {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    display: block;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #222529;
+}
+
+.employee__text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0.4rem;
+    padding: 0.4rem; 
+}
+
+.employee__footer {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    display: block;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #222529;
+}
+
+h2.employeeList__details {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    display: block;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h5.employeeList__details {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    display: block;
+    text-align:center;
+}
+
+.employeeUpdate__button.btn.btn-dark {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    margin-top: 2.5rem
+}
+
+

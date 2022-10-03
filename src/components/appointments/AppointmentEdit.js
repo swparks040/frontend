@@ -124,7 +124,7 @@ export const AppointmentEdit = () => {
                         required autoFocus
                         type="text"
                         className="form-control"
-                        placeholder="Directions and notes for your nail technician..."
+                        placeholder="Custom design title or directions and notes for your nail technician..."
                         value={appointment.directions}
                         onChange={
                             (evt) => {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Profile.css"
+import { Button } from "react-bootstrap"
 
 
 export const ClientForm = () => {
@@ -93,13 +94,16 @@ export const ClientForm = () => {
               />
             </div>
           </fieldset>
-          <button
+          <Button
+            variant="dark"
             onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
             className="saveProfile__button"
           >
             Save Profile
-          </button>
-          <button className="back__button"onClick={() => navigate(`/appointments`)}>Back</button>
+          </Button>
+          <Button variant="dark"
+          className="back__button"
+          onClick={() => navigate(`/appointments`)}>Back</Button>
         </form>
         </>
 
