@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Button } from "react-bootstrap"
+import { Button } from "react-bootstrap";
 
 export const AppointmentEdit = () => {
   const { appointmentId } = useParams();
@@ -63,8 +63,12 @@ export const AppointmentEdit = () => {
   return (
     <form className="appointmentForm">
       <h2 className="appointmentForm__title">Edit Appointment Details</h2>
-      <h5 className="appointmentForm__title">Select Custom for Color, Shape, and Effect for a Custom Design.  </h5>
-      <label className="formLabel" htmlFor="nailColor">First, select a Nail Color...</label>
+      <h5 className="appointmentForm__title">
+        Select Custom for Color, Shape, and Effect for a Custom Design.{" "}
+      </h5>
+      <label className="formLabel" htmlFor="nailColor">
+        First, select a Nail Color...
+      </label>
       <fieldset className="formGroup__colors">
         {nailColors.map((nailColor) => {
           return (
@@ -85,7 +89,9 @@ export const AppointmentEdit = () => {
           );
         })}
       </fieldset>
-      <label className="formLabel" htmlFor="nailShape">Next, select a Nail Shape...</label>
+      <label className="formLabel" htmlFor="nailShape">
+        Next, select a Nail Shape...
+      </label>
       <fieldset className="formGroup__shapes">
         {nailShapes.map((nailShape) => {
           return (
@@ -106,7 +112,9 @@ export const AppointmentEdit = () => {
           );
         })}
       </fieldset>
-      <label className="formLabel" htmlFor="nailEffect">Next, select a Nail Effect...</label>
+      <label className="formLabel" htmlFor="nailEffect">
+        Next, select a Nail Effect...
+      </label>
       <fieldset className="formGroup__effects">
         {nailEffects.map((nailEffect) => {
           return (
@@ -129,7 +137,10 @@ export const AppointmentEdit = () => {
       </fieldset>
       <fieldset>
         <div className="formGroup__directions">
-        <label className="formLabel" htmlFor="directions">Next, provide your Nailed It! Technician specific directions or requests...</label>
+          <label className="formLabel" htmlFor="directions">
+            Next, provide your Nailed It! Technician specific directions or
+            requests...
+          </label>
           <textarea
             required
             autoFocus
@@ -147,7 +158,9 @@ export const AppointmentEdit = () => {
         </div>
       </fieldset>
       <fieldset>
-      <label className="formLabel" htmlFor="dates">Finally, choose an Appointment Time</label>
+        <label className="formLabel" htmlFor="dates">
+          Finally, choose an Appointment Time
+        </label>
         <div className="formGroup__selection">
           <input
             type="datetime-local"
@@ -166,9 +179,10 @@ export const AppointmentEdit = () => {
         </div>
       </fieldset>
       <Button
-      variant="dark"
+        variant="dark"
         onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-        className="bookAppointment__button">
+        className="bookAppointment__button"
+      >
         Update Appointment
       </Button>
     </form>

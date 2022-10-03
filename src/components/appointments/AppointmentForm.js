@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap"
-
-
+import { Button } from "react-bootstrap";
 
 export const AppointmentForm = () => {
   //  Added component state for nailColors, nailShapes, nailEffects.
@@ -42,7 +40,7 @@ export const AppointmentForm = () => {
       });
   }, []);
 
-  //      implement "const navigate = useNavigate()"" hook so I can redirect the clients and employees to the appointment list.
+  //implement "const navigate = useNavigate()"" hook so I can redirect the clients and employees to the appointment list.
 
   const navigate = useNavigate();
   const localNailedItUser = localStorage.getItem("nailedIt_user");
@@ -51,7 +49,7 @@ export const AppointmentForm = () => {
   const handleSaveButtonClick = (event) => {
     event.preventDefault();
 
-    //      create object to be sent to the API
+    //create object to be sent to the API
 
     const appointmentToSendToAPI = {
       userId: nailedItUserObject.id,
@@ -63,7 +61,7 @@ export const AppointmentForm = () => {
       dateCompleted: appointment.dateCompleted,
     };
 
-    //      post to API with fetch POST, stringify with .stringify(appointmentObject) in the body, then navigate to appointments.
+    //post to API with fetch POST, stringify with .stringify(appointmentObject) in the body, then navigate to appointments.
     return fetch(`http://localhost:8088/appointments`, {
       method: "POST",
       headers: {
@@ -80,8 +78,12 @@ export const AppointmentForm = () => {
   return (
     <form className="appointmentForm">
       <h2 className="appointmentForm__title">New Appointment</h2>
-      <h5 className="appointmentForm__title">Select Custom for Color, Shape, and Effect for a Custom Design.  </h5>
-        <label className="formLabel" htmlFor="nailColor">First, select a Nail Color...</label>
+      <h5 className="appointmentForm__title">
+        Select Custom for Color, Shape, and Effect for a Custom Design.{" "}
+      </h5>
+      <label className="formLabel" htmlFor="nailColor">
+        First, select a Nail Color...
+      </label>
       <fieldset className="formGroup__colors">
         {nailColors.map((nailColor) => {
           return (
@@ -102,7 +104,9 @@ export const AppointmentForm = () => {
           );
         })}
       </fieldset>
-        <label className="formLabel" htmlFor="nailShape">Next, select a Nail Shape...</label>
+      <label className="formLabel" htmlFor="nailShape">
+        Next, select a Nail Shape...
+      </label>
       <fieldset className="formGroup__shapes">
         {nailShapes.map((nailShape) => {
           return (
@@ -123,7 +127,9 @@ export const AppointmentForm = () => {
           );
         })}
       </fieldset>
-        <label className="formLabel" htmlFor="nailEffect">Next, select a Nail Effect...</label>
+      <label className="formLabel" htmlFor="nailEffect">
+        Next, select a Nail Effect...
+      </label>
       <fieldset className="formGroup__effects">
         {nailEffects.map((nailEffect) => {
           return (
@@ -146,7 +152,10 @@ export const AppointmentForm = () => {
       </fieldset>
       <fieldset>
         <div className="formGroup__directions">
-          <label className="formLabel" htmlFor="directions">Next, provide your Nailed It! Technician specific directions or requests...</label>
+          <label className="formLabel" htmlFor="directions">
+            Next, provide your Nailed It! Technician specific directions or
+            requests...
+          </label>
           <textarea
             required
             autoFocus
@@ -164,7 +173,9 @@ export const AppointmentForm = () => {
         </div>
       </fieldset>
       <fieldset>
-          <label className="formLabel" htmlFor="dates">Finally, choose an Appointment Time</label>
+        <label className="formLabel" htmlFor="dates">
+          Finally, choose an Appointment Time
+        </label>
         <div className="formGroup__selection">
           <input
             type="datetime-local"
@@ -183,9 +194,10 @@ export const AppointmentForm = () => {
         </div>
       </fieldset>
       <Button
-      variant="dark"
+        variant="dark"
         onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-        className="bookAppointment__button">
+        className="bookAppointment__button"
+      >
         Book Appointment
       </Button>
     </form>

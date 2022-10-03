@@ -1,7 +1,3 @@
-/* use state for appointments, use effect for appointments
-
-1. Create AppointmentList function to be used/rendered in ApplicationViews.js*/
-
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Appointment } from "./Appointment";
@@ -61,72 +57,106 @@ export const AppointmentList = () => {
 
   return (
     <>
-    
-      
       {nailedItUserObject.staff ? (
         <>
-        <h2 className="appointmentList">My Appointments</h2>
+          <h2 className="appointmentList">My Appointments</h2>
         </>
       ) : (
         <>
-        <h2 className="appointmentList">Our Custom Packages</h2>
-        
-          
+          <h2 className="appointmentList">Our Custom Packages</h2>
         </>
       )}
       <Carousel>
         <Carousel.Item>
           <img
             className="d-block"
-            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            style={{
+              height: 450,
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "flex",
+              justifyContent: "center",
+            }}
             src={whitePinkNails}
             alt="Spring Formal"
           />
           <Carousel.Caption>
             <h3 className="carousel__text">Spring Formal</h3>
-            <p className="carousel__text">Sydnee Parks' selection for Spring Formal.</p>
+            <p className="carousel__text">
+              Sydnee Parks' selection for Spring Formal.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            style={{
+              height: 450,
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "flex",
+              justifyContent: "center",
+            }}
             src={easterEggs}
             alt="Easter Eggs"
           />
           <Carousel.Caption>
             <h3 className="carousel__text">Easter Eggs</h3>
-            <p className="carousel__text">Melissa Peters' selection for Easter Ball.</p>
+            <p className="carousel__text">
+              Melissa Peters' selection for Easter Ball.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            style={{
+              height: 450,
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "flex",
+              justifyContent: "center",
+            }}
             src={blueTopaz}
             alt="Blue Topaz"
           />
           <Carousel.Caption>
             <h3 className="carousel__text">Blue Topaz</h3>
-            <p className="carousel__text">Oliani's selection for Back to School.</p>
+            <p className="carousel__text">
+              Oliani's selection for Back to School.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            style={{
+              height: 450,
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "flex",
+              justifyContent: "center",
+            }}
             src={everything}
             alt="Everything"
           />
           <Carousel.Caption>
             <h3 className="carousel__text">Everything</h3>
-            <p className="carousel__text">We can produce anything you can imagine.</p>
+            <p className="carousel__text">
+              We can produce anything you can imagine.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            style={{
+              height: 450,
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "flex",
+              justifyContent: "center",
+            }}
             src={funtimes}
             alt="Everything"
           />
@@ -138,47 +168,71 @@ export const AppointmentList = () => {
         <Carousel.Item>
           <img
             className="d-block"
-            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            style={{
+              height: 450,
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "flex",
+              justifyContent: "center",
+            }}
             src={ivoryTower}
             alt="Ivory Tower"
           />
           <Carousel.Caption>
             <h3 className="carousel__text">Ivory Tower</h3>
-            <p className="carousel__text">Serious Neverending Story Princess vibes...</p>
+            <p className="carousel__text">
+              Serious Neverending Story Princess vibes...
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            style={{
+              height: 450,
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "flex",
+              justifyContent: "center",
+            }}
             src={Roses}
             alt="Roses"
           />
           <Carousel.Caption>
             <h3 className="carousel__text">Roses</h3>
-            <p className="carousel__text">Roses are in season and in full bloom.</p>
+            <p className="carousel__text">
+              Roses are in season and in full bloom.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            style={{ height: 450, marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center" }}
+            style={{
+              height: 450,
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "flex",
+              justifyContent: "center",
+            }}
             src={weddingReady}
             alt="Roses"
           />
           <Carousel.Caption>
             <h3 className="carousel__text">Wedding Ready</h3>
-            <p className="carousel__text">The perfect bride deserves the perfect nails.</p>
+            <p className="carousel__text">
+              The perfect bride deserves the perfect nails.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       <Button
-            variant="dark"
-            className="makeAppointment__button"
-            onClick={() => navigate("/appointment/create")}
-          >
-            Make New Appointment
-          </Button>
+        variant="dark"
+        className="makeAppointment__button"
+        onClick={() => navigate("/appointment/create")}
+      >
+        Make New Appointment
+      </Button>
       <article className="appointments">
         {filteredAppointments.map((appointment) => (
           <Appointment

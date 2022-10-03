@@ -1,42 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
 
 .Login {
-    align-items: center;
+  align-items: center;
 }
 
 .Login__header {
-    background-color: rgb(190, 172, 166);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: #000;
+  background-color: rgb(190, 172, 166);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #000;
 }
 
 .form {
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    
+  font-family: "Nunito", sans-serif;
+  text-align: center;
 }
 
-
-
 .card-img {
-    background-color: rgb(190, 172, 166);
-    border: 2px solid #533b4d;
+  background-color: rgb(190, 172, 166);
+  border: 2px solid #533b4d;
 }
 
 .form-label {
-    font-family: 'Nunito', sans-serif;
-    font-size: smaller;
-    text-align: center;
-    
+  font-family: "Nunito", sans-serif;
+  font-size: smaller;
+  text-align: center;
 }
 
 .registration__link {
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    color: #61dafb;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: #61dafb;
 }

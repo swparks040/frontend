@@ -12,14 +12,19 @@ export const ClientViews = () => {
       <Route
         path="/"
         element={
-            <>
+          <>
             <div className="bg">
-              <img src={homepage}
-                alt="nail_collage" style={{ width: "100%", height: "100%", opacity: 0.3}}/>  
+              <img
+                src={homepage}
+                alt="nail_collage"
+                style={{ width: "100%", height: "100%", opacity: 0.3 }}
+              />
             </div>
-            <img src={oliviaMainView} 
-            alt="main logo"
-            style={{width: "100%"}}/>
+            <img
+              src={oliviaMainView}
+              alt="main logo"
+              style={{ width: "100%" }}
+            />
             <Outlet />
           </>
         }

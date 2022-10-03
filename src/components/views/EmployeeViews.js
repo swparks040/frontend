@@ -8,7 +8,7 @@ import { Profile } from "../profile/Profile";
 import { AppointmentEdit } from "../appointments/AppointmentEdit";
 import { AppointmentForm } from "../appointments/AppointmentForm";
 import homepage from "../images/nailcollage1.jpg";
-import "./Views.css"
+import "./Views.css";
 
 export const EmployeeViews = () => {
   return (
@@ -18,10 +18,12 @@ export const EmployeeViews = () => {
         element={
           <>
             <div className="bg">
-              <img src={homepage}
-                alt="nail_collage" style={{ width: "100%", height: "100%", opacity: 0.4}}/>  
+              <img
+                src={homepage}
+                alt="nail_collage"
+                style={{ width: "100%", height: "100%", opacity: 0.4 }}
+              />
             </div>
-          
 
             <Outlet />
           </>

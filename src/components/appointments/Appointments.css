@@ -1,159 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
 
 .appointmentList {
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-    display: block;
-    text-align:center;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: block;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
 }
-
-
 
 .formGroup__colors,
 .formGroup__shapes,
 .formGroup__effects {
-    font-family: 'Nunito', sans-serif;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 35px;
+  font-family: "Nunito", sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 35px;
 }
 .formGroup__directions {
-    font-family: 'Nunito', sans-serif;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 10px;
-    margin-bottom: 35px;
+  font-family: "Nunito", sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 10px;
+  margin-bottom: 35px;
 }
 
 .formLabel {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    display: block;
-    text-align:center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
 }
 
 .formGroup_selection {
-    font-family: 'Nunito', sans-serif;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 10px;
-    margin-bottom: 35px;
+  font-family: "Nunito", sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 10px;
+  margin-bottom: 35px;
 }
 
-
 .appointment__details {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    background-color: white;
-    border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color: white;
+  border-radius: 10px;
 }
 .appointment__text,
 .colorInput,
 .shapeInput,
 .effectInput {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    margin: 0.4rem;
-    padding: 0.4rem; 
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0.4rem;
+  padding: 0.4rem;
 }
 
 .appointment__header {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 2.2rem;
-    text-shadow: rgba(255,255,255,0.5) 0px 0px 28px;
-    display: block;
-    text-align:center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: #222529;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 0px 28px;
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #222529;
 }
 
 .appointmentClaim__tag {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    display: block;
-    text-align:center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: #222529;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #222529;
 }
 
 h2.appointmentForm__title {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 2.2rem;
-    display: block;
-    text-align:center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 h5.appointmentForm__title {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    display: block;
-    text-align:center;
-    margin-bottom: 10rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 10rem;
 }
 
 h3.carousel__text {
-    color: black;
-    font-family: 'Nunito', sans-serif;
+  color: black;
+  font-family: "Nunito", sans-serif;
 }
 p.carousel__text {
-    font-family: 'Nunito', sans-serif;
-    margin-top: 0px;
-    color: #222529;
+  font-family: "Nunito", sans-serif;
+  margin-top: 0px;
+  color: #222529;
 }
 
 .d-block {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    margin-bottom: 135px;
-    border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-bottom: 135px;
+  border-radius: 10px;
 }
 
 .form-control {
-    width: 70%;
+  width: 70%;
 }
 
 .makeAppointment__button.btn.btn-dark,
 .bookAppointment__button.btn.btn-dark,
 .back__button.btn.btn-dark {
-    font-family: 'Nunito', sans-serif;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5rem;
-    margin-top: 2.5rem
+  font-family: "Nunito", sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  margin-top: 2.5rem;
 }
 
 .appointmentDelete__button.btn.btn-dark,
 .appointmentEdit__button.btn.btn-dark,
 .appointmentComplete__button.btn.btn-dark,
 .appointmentClaim__button.btn.btn-dark {
-    font-family: 'Nunito', sans-serif;
-    display: flex;
-    margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }

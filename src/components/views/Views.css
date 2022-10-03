@@ -1,11 +1,10 @@
 .bg {
-    background-repeat:no-repeat;
-    background-size:cover;
-    bottom:0;
-    left:0;
-    position:fixed;
-    right:0;
-    top:0;
-    z-index: -5
-    
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -5;
 }
