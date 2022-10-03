@@ -9,7 +9,7 @@ export const EmployeeNav = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Navbar className="navbar__main" sticky="top" variant="dark">
+      <Navbar className="navbar__main" sticky="top" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/" className="navbar__text"><img src={mylogo} alt="logo" height="50" width="50" to={"/"} className="navbar__logo"/> Nailed It! by Olivia</Navbar.Brand>
           <Nav className="justify-content-end">

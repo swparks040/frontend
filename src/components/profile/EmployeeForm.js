@@ -65,7 +65,7 @@ export const EmployeeForm = () => {
         <h2 className="profile__title">Update Employee Profile</h2>
         <fieldset>
           <div className="form-group">
-            <label htmlFor="name">Hourly Rate:</label>
+            <label className="formLabel" htmlFor="name">Hourly Rate:</label>
             <input
               type="number"
               className="form-control"
@@ -80,7 +80,7 @@ export const EmployeeForm = () => {
         </fieldset>
         <fieldset>
           <div className="form-group">
-            <label htmlFor="specialty">Job Description:</label>
+            <label className="formLabel" htmlFor="specialty">Job Description:</label>
             <input
               required
               autoFocus
@@ -97,7 +97,7 @@ export const EmployeeForm = () => {
         </fieldset>
         <fieldset>
           <div className="form-group">
-            <label htmlFor="dates">Employment Start Date:</label>
+            <label className="formLabel" htmlFor="dates">Employment Start Date:</label>
             <input
               required
               autoFocus

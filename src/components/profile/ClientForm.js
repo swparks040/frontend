@@ -57,10 +57,10 @@ export const ClientForm = () => {
         {feedback}
         </div>
         <form className="profile">
-          <h2 className="profile__title">Update Client Profile</h2>
+          <h2 className="profile__title">Update My Profile</h2>
           <fieldset>
             <div className="form-group">
-              <label htmlFor="address">Address:</label>
+              <label className="formLabel" htmlFor="address">Address:</label>
               <input
                 required
                 autoFocus
@@ -78,7 +78,7 @@ export const ClientForm = () => {
           </fieldset>
           <fieldset>
             <div className="form-group">
-              <label htmlFor="phone">Phone Number:</label>
+              <label className="formLabel" htmlFor="phone">Phone Number:</label>
               <input
                 required
                 autoFocus

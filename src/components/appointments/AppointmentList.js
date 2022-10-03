@@ -69,7 +69,7 @@ export const AppointmentList = () => {
         </>
       ) : (
         <>
-        <h2 className="appointmentList">Our Custom Selection</h2>
+        <h2 className="appointmentList">Our Custom Packages</h2>
         
           
         </>
