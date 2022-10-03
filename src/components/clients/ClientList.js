@@ -19,8 +19,8 @@ export const ClientList = () => {
     )
 
     return <><article className="clients">
-        <h2>List of Clients</h2>
-        <span className="clientList__details">Select hyperlink for details...</span>
+        <h2 className="clientList__details">Nailed It! Clients</h2>
+        <h5 className="clientList__details">Select hyperlink for details...</h5>
         {
             clients.map(client => <Client key={`client--${client.id}`}
                 id={client.id} 

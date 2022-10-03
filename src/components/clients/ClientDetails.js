@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import "./Clients.css"
+import { Button } from "react-bootstrap"
 
 export const ClientDetails = () => {
     const {clientId} = useParams()
@@ -18,11 +19,12 @@ export const ClientDetails = () => {
         [clientId]
     )
 
-    return <><section className="client">
-    <header className="client__header">{client?.user?.fullName}</header> 
-    <p>Email: {client?.user?.email}</p>
-    <p>Address: {client.address}</p>
-    <p>Phone Number: {client.phone}</p>
+    return <>
+    <section className="client">
+        <header className="client__header">{client?.user?.fullName}</header> 
+            <p className="client__text">Email: {client?.user?.email}</p>
+            <p className="client__text">Address: {client.address}</p>
+            <p className="client__text">Phone Number: {client.phone}</p>
 </section>
-<button className="appointmentEdit__button"onClick={() => navigate(`/clients`)}>Back</button></>
+<Button variant="dark"className="back__button"onClick={() => navigate(`/clients`)}>Back</Button></>
 }

@@ -10,6 +10,52 @@
     font-size: 3rem;
 }
 
+
+
+.formGroup__colors,
+.formGroup__shapes,
+.formGroup__effects {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+.formGroup__directions {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+.formLabel {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: block;
+    text-align:center;
+}
+
+.formGroup_selection {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+
 .appointment__details {
     display: block;
     margin-left: auto;
@@ -19,7 +65,10 @@
     background-color: white;
     border-radius: 10px;
 }
-.appointment__text {
+.appointment__text,
+.colorInput,
+.shapeInput,
+.effectInput {
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
     font-size: 1rem;
@@ -31,6 +80,7 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 2.2rem;
+    text-shadow: rgba(255,255,255,0.5) 0px 0px 28px;
     display: block;
     text-align:center;
     margin-top: 2rem;
@@ -63,10 +113,7 @@ h5.appointmentForm__title {
     font-size: 1rem;
     display: block;
     text-align:center;
-}
-
-.carousel-caption {
-    
+    margin-bottom: 10rem;
 }
 
 h3.carousel__text {
@@ -85,7 +132,9 @@ p.carousel__text {
     border-radius: 10px;
 }
 
-
+.form-control {
+    width: 70%;
+}
 
 .makeAppointment__button.btn.btn-dark,
 .bookAppointment__button.btn.btn-dark,

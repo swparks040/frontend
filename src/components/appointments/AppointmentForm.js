@@ -81,11 +81,11 @@ export const AppointmentForm = () => {
     <form className="appointmentForm">
       <h2 className="appointmentForm__title">New Appointment</h2>
       <h5 className="appointmentForm__title">Select Custom for Color, Shape, and Effect for a Custom Design.  </h5>
-      <fieldset className="form-group">
-        <label htmlFor="nailColor">Nail Colors</label>
+        <label className="formLabel" htmlFor="nailColor">First, select a Nail Color...</label>
+      <fieldset className="formGroup__colors">
         {nailColors.map((nailColor) => {
           return (
-            <div className="form-group">
+            <div className="formGroup__selection">
               <input
                 className="colorInput"
                 name="nailColor"
@@ -102,11 +102,11 @@ export const AppointmentForm = () => {
           );
         })}
       </fieldset>
-      <fieldset className="form-group">
-        <label htmlFor="nailShape">Nail Shapes</label>
+        <label className="formLabel" htmlFor="nailShape">Next, select a Nail Shape...</label>
+      <fieldset className="formGroup__shapes">
         {nailShapes.map((nailShape) => {
           return (
-            <div className="form-group">
+            <div className="formGroup__selection">
               <input
                 className="shapeInput"
                 name="nailShape"
@@ -123,11 +123,11 @@ export const AppointmentForm = () => {
           );
         })}
       </fieldset>
-      <fieldset className="form-group">
-        <label htmlFor="nailEffect">Nail Effects</label>
+        <label className="formLabel" htmlFor="nailEffect">Next, select a Nail Effect...</label>
+      <fieldset className="formGroup__effects">
         {nailEffects.map((nailEffect) => {
           return (
-            <div className="form-group">
+            <div className="formGroup__selection">
               <input
                 className="effectInput"
                 name="nailEffect"
@@ -145,26 +145,27 @@ export const AppointmentForm = () => {
         })}
       </fieldset>
       <fieldset>
-        <div className="form-group">
-          <label htmlFor="directions">Directions</label>
-          <input
+        <div className="formGroup__directions">
+          <label className="formLabel" htmlFor="directions">Next, provide your Nailed It! Technician specific directions or requests...</label>
+          <textarea
             required
             autoFocus
-            type="text"
+            type="textarea"
             className="form-control"
-            placeholder="Custom design title or directions and notes for your nail technician..."
+            placeholder="Include the name of a custom design, or leave directions and notes for your nail technician..."
             value={appointment.directions}
             onChange={(evt) => {
               const copy = { ...appointment };
               copy.directions = evt.target.value;
               update(copy);
             }}
+            rows={3}
           />
         </div>
       </fieldset>
       <fieldset>
-        <div className="form-group">
-          <label htmlFor="dates">Choose Appointment Time:</label>
+          <label className="formLabel" htmlFor="dates">Finally, choose an Appointment Time</label>
+        <div className="formGroup__selection">
           <input
             type="datetime-local"
             className="form-control"
