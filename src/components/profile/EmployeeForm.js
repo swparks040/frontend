@@ -99,27 +99,6 @@ export const EmployeeForm = () => {
             />
           </div>
         </fieldset>
-        <fieldset>
-          <div className="form-group">
-            <label className="formLabel" htmlFor="dates">
-              Employment Start Date:
-            </label>
-            <input
-              required
-              autoFocus
-              type="date"
-              className="form-control"
-              value={profile.startDate}
-              min="2000-01-01"
-              max="2030-01-01"
-              onChange={(evt) => {
-                const copy = { ...profile };
-                copy.startDate = evt.target.value;
-                updateProfile(copy);
-              }}
-            />
-          </div>
-        </fieldset>
         <Button
           variant="dark"
           onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}

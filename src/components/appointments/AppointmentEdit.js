@@ -82,6 +82,7 @@ export const AppointmentEdit = () => {
                   updateAppointment(copy);
                 }}
                 type="radio"
+                checked={nailColor.id}
                 value={nailColor.id}
               />{" "}
               {nailColor.color}
@@ -105,6 +106,7 @@ export const AppointmentEdit = () => {
                   updateAppointment(copy);
                 }}
                 type="radio"
+                checked={nailShape.id}
                 value={nailShape.id}
               />{" "}
               {nailShape.shape}
@@ -128,6 +130,7 @@ export const AppointmentEdit = () => {
                   updateAppointment(copy);
                 }}
                 type="radio"
+                checked={nailEffect.id}
                 value={nailEffect.id}
               />{" "}
               {nailEffect.effect}

@@ -79,7 +79,7 @@ export const AppointmentForm = () => {
     <form className="appointmentForm">
       <h2 className="appointmentForm__title">New Appointment</h2>
       <h5 className="appointmentForm__title">
-        Select Custom for Color, Shape, and Effect for a Custom Design.{" "}
+        Select Custom for Color, Shape, and Effect for a Custom Package.{" "}
       </h5>
       <label className="formLabel" htmlFor="nailColor">
         First, select a Nail Color...

@@ -25,7 +25,7 @@ export const Login = () => {
               staff: user.isStaff,
             })
           );
-          navigate("/");
+          navigate("/appointments");
         } else {
           window.alert("Invalid login");
         }

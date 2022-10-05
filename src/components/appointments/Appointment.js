@@ -50,7 +50,7 @@ export const Appointment = ({
     if (nailedItUserObject.staff) {
       return appointmentObject.employeeAppointments.length ? (
         <span className="appointmentClaim__tag">
-          Currently with{" "}
+          By{" "}
           {assignedEmployee !== null ? assignedEmployee?.user?.fullName : ""}
         </span>
       ) : (
